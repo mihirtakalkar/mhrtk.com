@@ -22,11 +22,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
-      </body>
-    </html>
-  );
+ return (
+  <html lang="en">
+    <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-hidden`}>
+      <img
+        src="background.svg"
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 w-full h-full object-cover"
+      />
+      {children}
+    </body>
+  </html>
+);
+
 }
