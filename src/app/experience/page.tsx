@@ -1,13 +1,11 @@
-import Navbar from "../navbar";
-
 export default function Experience() {
-  return (
-    <>
-      <Navbar />
-      <main className="min-h-screen px-8 py-20 text-white">
-        <h1 className="text-2xl font-semibold mb-4">Experience</h1>
-        <p className="text-white/60">💻 experience page</p>
+ return (
+      <main className="flex-grow">
+        <div className="max-w-4xl mx-auto px-10 py-20 text-white">
+          <h1 className="text-3xl font-bold mb-4">Experience</h1>
+          <p className="text-white/60">💻 experience page</p>
+        </div>
       </main>
-    </>
   );
 }
+
