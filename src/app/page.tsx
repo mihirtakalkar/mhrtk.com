@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <div>
       {/* Hero / Main content fills vertical space */}
-      <main className="flex-grow grid place-items-center p-8 sm:p-20 text-white font-medium text-center">
+      <main className="flex-grow grid place-items-center p-8 sm:p-20 text-cyan-50 font-medium text-center">
         <div className="space-y-4">
-          <h1 className="text-2xl sm:text-3xl font-semibold">
+          <h1 className="text-2xl sm:text-3xl font-serif font-semibold">
             mihir's personal website
           </h1>
 
