@@ -1,4 +1,4 @@
-import { Github, Linkedin, Film } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
             mihir's personal website
           </h1>
 
-          <p className="text-white/70 text-base sm:text-lg">
-            EECS @ UC Berkeley • SDE Intern @ Amazon
+          <p className="text-white/70 text-base sm:text-lg font-semibold">
+            eecs @ berkeley • sde intern @ amazon
           </p>
 
           <p className="text-white/50 text-sm sm:text-base font-mono">
@@ -38,16 +38,6 @@ export default function Home() {
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5 hover:scale-110 transition-transform" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://letterboxd.com/mhrtk/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Letterboxd"
-                >
-                  <Film className="h-5 w-5 hover:scale-110 transition-transform" />
                 </a>
               </li>
             </ul>
