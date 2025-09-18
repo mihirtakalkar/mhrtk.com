@@ -11,7 +11,7 @@ export default function Home() {
           </h1>
 
           <p className="text-white/70 text-base sm:text-lg font-semibold">
-            eecs @ berkeley • sde intern @ amazon
+            eecs @ uc berkeley
           </p>
 
           <p className="text-white/50 text-sm sm:text-base font-mono">
