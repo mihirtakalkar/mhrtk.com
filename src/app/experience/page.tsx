@@ -13,6 +13,7 @@ export default function Experience() {
       location: "Berkeley, CA",
       duration: "Sep 2024 – Present",
       description: "Predictive modeling for 3D printing with GNNs and CNNs · Sarah McMains Group",
+      link: "https://github.com/mihirtakalkar/additivemodels",
     },
     {
       title: "Firmware Engineer",
@@ -44,6 +45,17 @@ export default function Experience() {
                 {job.duration} · {job.location}
               </p>
               <p className="text-white/70 text-sm">{job.description}</p>
+              {"link" in job && job.link ? (
+                <a
+                  href={job.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-white/70 hover:text-white transition"
+                >
+                  <span>repo</span>
+                  <span aria-hidden className="text-[11px]">↗</span>
+                </a>
+              ) : null}
             </div>
           ))}
         </div>

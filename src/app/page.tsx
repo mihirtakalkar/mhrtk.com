@@ -1,49 +1,48 @@
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Home() {
   return (
-    <div>
-      {/* Hero / Main content fills vertical space */}
-      <main className="flex-grow grid place-items-center p-8 sm:p-20 text-cyan-50 font-medium text-center">
-        <div className="space-y-4">
-          <h1 className="text-2xl sm:text-3xl font-serif font-semibold">
-            mihir's personal website
+    <main className="flex-grow">
+      <section className="max-w-3xl mx-auto px-6 py-16 text-white space-y-6">
+        <div className="space-y-2">
+          <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight">
+            mihir takalkar
           </h1>
-
-          <p className="text-white/70 text-base sm:text-lg font-semibold">
-            eecs @ uc berkeley
-          </p>
-
-          <p className="text-white/50 text-sm sm:text-base font-mono">
-            mihirtakalkar AT berkeley.edu
-          </p>
-
-          <nav aria-label="Social Links" className="mt-6">
-            <ul className="flex justify-center gap-6 text-white/70 hover:text-white transition">
-              <li>
-                <a
-                  href="https://github.com/mihirtakalkar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                >
-                  <Github className="h-5 w-5 hover:scale-110 transition-transform" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://linkedin.com/in/mihirtakalkar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-5 w-5 hover:scale-110 transition-transform" />
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <div className="h-px w-20 bg-white/60" />
         </div>
-      </main>
-      </div>
+
+        <p className="text-sm sm:text-base text-white/80 leading-relaxed">
+          I study EECS at UC Berkeley, working across systems, applied ML, and embedded software. This winter I will intern at Uber; previously, I spent time at Amazon and have contributed to research on campus. Feel free to reach out!
+        </p>
+
+        <div className="flex gap-4 text-sm text-white/80">
+          <a
+            href="mailto:mihirtakalkar@berkeley.edu"
+            className="inline-flex items-center gap-2 hover:text-white transition"
+          >
+            <Mail className="h-5 w-5" />
+            Email
+          </a>
+          <a
+            href="https://github.com/mihirtakalkar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-white transition"
+          >
+            <Github className="h-5 w-5" />
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/mihirtakalkar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 hover:text-white transition"
+          >
+            <Linkedin className="h-5 w-5" />
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
   );
 }
