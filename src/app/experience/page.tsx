@@ -33,11 +33,11 @@ export default function Experience() {
 
   return (
     <main className="flex-grow">
-      <div className="max-w-3xl mx-auto px-6 sm:px-10 py-5 text-white space-y-5">
+      <div className="max-w-3xl mx-auto px-6 sm:px-10 py-12 text-white space-y-6">
         <h4 className="text-3xl font-serif font-semibold">experience</h4>
-        <div className="space-y-5">
+        <div className="space-y-6">
           {jobs.map((job, idx) => (
-            <div key={idx} className="space-y-1">
+            <div key={idx} className="space-y-1.5">
               <h2 className="text-xl font-semibold text-white">
                 {job.title} <span className="text-white/80">@ {job.org}</span>
               </h2>
