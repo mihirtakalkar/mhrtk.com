@@ -26,6 +26,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "mhrtk",
   description: "Mihir's personal website.",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

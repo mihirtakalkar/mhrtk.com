@@ -6,9 +6,10 @@ export default function Navbar() {
       <nav className="max-w-3xl mx-auto flex items-center justify-between px-10 py-15 text-white font-medium">
         <Link
           href="/"
-          className="text-lg font-semibold hover:text-slate-200 transition"
+          aria-label="Home"
+          className="text-xl font-bold tracking-tight text-white/90 hover:text-white transition font-serif"
         >
-          mhrtk
+          mt
         </Link>
         <ul className="flex gap-6 text-sm">
           <Link

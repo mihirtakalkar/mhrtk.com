@@ -25,15 +25,6 @@ const projection = geoAlbersUsa().fitSize([width, height], usa as any);
 const pathGenerator = geoPath(projection);
 const outlinePath = pathGenerator(usa as any) || "";
 
-function toPosition(lat: number, lon: number) {
-  const point = projection([lon, lat]);
-  if (!point) {
-    return null;
-  }
-  const [x, y] = point;
-  return { left: `${(x / width) * 100}%`, top: `${(y / height) * 100}%` };
-}
-
 export default function Parks() {
   return (
     <main className="flex-grow">
