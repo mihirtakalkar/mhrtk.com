@@ -9,8 +9,7 @@ export default function Hobbies() {
           I'm drawn to atmospheric films like <em>Heat</em> and{" "}
           <em>Nightcrawler</em>. I spend my time hiking national parks—
           Yosemite, Rainier, Zion, and more. Lately, I’ve been exploring
-          photography (some pics coming soon). I enjoy building PCs with 
-          no RGB. Probably eating Thai food.
+          photography. I also enjoy building PCs and eating Thai food.
         </p>
 
         <div className="pt-4 flex flex-wrap gap-2 text-[13px]">
