@@ -3,8 +3,8 @@ Personal website build primarily for showcasing bio, projects, and hobbies.
 ![Frontpage](https://github.com/user-attachments/assets/db5a1f94-b311-4296-bd61-39d2ada7aad2)
 
 
-### 🛠 Stack
+### Stack
 - **Framework:** Next.js
 - **Styling:** Tailwind CSS
-- **Fonts:** Playfair, Geist
+- **Fonts:** Playfair, Geist, Space Grotesk
 - **Hosting:** Vercel
