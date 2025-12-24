@@ -18,6 +18,9 @@ const parks = [
 
 const width = 1000;
 const height = 600;
+const mapPadding = 36;
+const mapScale = (width - mapPadding * 2) / width;
+const mapTransform = `translate(${mapPadding}, ${mapPadding}) scale(${mapScale})`;
 const projection = geoAlbersUsa().fitSize([width, height], usa as any);
 const pathGenerator = geoPath(projection);
 const outlinePath = pathGenerator(usa as any) || "";
@@ -48,63 +51,65 @@ export default function Parks() {
             className="absolute inset-0 h-full w-full text-white"
             aria-hidden
           >
-            <path
-              d={outlinePath}
-              fill="currentColor"
-              fillOpacity="0.06"
-              stroke="currentColor"
-              strokeOpacity="0.2"
-              strokeWidth="1.5"
-            />
-            {parks.map((park) => {
-              const point = projection([park.lon, park.lat]);
-              if (!point) {
-                return null;
-              }
-              const [x, y] = point;
-              const labelWidth = park.name.length * 6.5 + 16;
-              const labelHeight = 20;
-              const labelX = -labelWidth / 2;
-              const labelY = -labelHeight - 10;
-              return (
-                <g
-                  key={park.name}
-                  className="group"
-                  transform={`translate(${x}, ${y})`}
-                >
-                  <circle
-                    r="10"
-                    fill="rgba(21,128,61,0.2)"
-                  />
-                  <circle
-                    r="5"
-                    fill="#86efac"
-                    stroke="#166534"
-                    strokeWidth="1.5"
-                  />
-                  <g className="opacity-0 transition group-hover:opacity-100">
-                    <rect
-                      x={labelX}
-                      y={labelY}
-                      width={labelWidth}
-                      height={labelHeight}
-                      rx="10"
-                      fill="rgba(0,0,0,0.7)"
+            <g transform={mapTransform}>
+              <path
+                d={outlinePath}
+                fill="currentColor"
+                fillOpacity="0.06"
+                stroke="currentColor"
+                strokeOpacity="0.2"
+                strokeWidth="1.5"
+              />
+              {parks.map((park) => {
+                const point = projection([park.lon, park.lat]);
+                if (!point) {
+                  return null;
+                }
+                const [x, y] = point;
+                const labelWidth = park.name.length * 6.5 + 16;
+                const labelHeight = 20;
+                const labelX = -labelWidth / 2;
+                const labelY = -labelHeight - 10;
+                return (
+                  <g
+                    key={park.name}
+                    className="group"
+                    transform={`translate(${x}, ${y})`}
+                  >
+                    <circle
+                      r="10"
+                      fill="rgba(21,128,61,0.2)"
                     />
-                    <text
-                      x="0"
-                      y={labelY + labelHeight / 2 + 4}
-                      textAnchor="middle"
-                      fontSize="12"
-                      fontWeight="600"
-                      fill="#ffffff"
-                    >
-                      {park.name}
-                    </text>
+                    <circle
+                      r="5"
+                      fill="#86efac"
+                      stroke="#166534"
+                      strokeWidth="1.5"
+                    />
+                    <g className="opacity-0 transition group-hover:opacity-100">
+                      <rect
+                        x={labelX}
+                        y={labelY}
+                        width={labelWidth}
+                        height={labelHeight}
+                        rx="10"
+                        fill="rgba(0,0,0,0.7)"
+                      />
+                      <text
+                        x="0"
+                        y={labelY + labelHeight / 2 + 4}
+                        textAnchor="middle"
+                        fontSize="12"
+                        fontWeight="600"
+                        fill="#ffffff"
+                      >
+                        {park.name}
+                      </text>
+                    </g>
                   </g>
-                </g>
-              );
-            })}
+                );
+              })}
+            </g>
           </svg>
         </div>
       </section>
