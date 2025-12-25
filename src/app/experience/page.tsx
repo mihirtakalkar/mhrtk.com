@@ -1,26 +1,33 @@
 export default function Experience() {
   const jobs = [
     {
+      title: "Software Engineering Intern",
+      org: "Uber",
+      location: "Sunnyvale, CA",
+      duration: "Jan 2026 – Present",
+      description: "Membership",
+    },
+    {
       title: "Software Development Engineer Intern",
       org: "Amazon",
       location: "Bellevue, WA",
-      duration: "May 2025 – Present",
+      duration: "May 2025 – Aug 2025",
       description: "Connected Vehicle Testing Infrastructure",
-    },
-    {
-      title: "Machine Learning Researcher",
-      org: "UC Berkeley",
-      location: "Berkeley, CA",
-      duration: "Sep 2024 – Present",
-      description: "Predictive modeling for 3D printing with GNNs and CNNs · Sarah McMains Group",
-      link: "https://github.com/mihirtakalkar/additivemodels",
     },
     {
       title: "Firmware Engineer",
       org: "Formula Electric at Berkeley",
       location: "Richmond, CA",
-      duration: "Jan 2024 – Present",
+      duration: "Jan 2024 – Aug 2025",
       description: "STM32-based firmware for vehicle telemetry pipeline",
+    },
+    {
+      title: "Machine Learning Researcher",
+      org: "UC Berkeley",
+      location: "Berkeley, CA",
+      duration: "Sep 2024 – May 2025",
+      description: "Predictive modeling for 3D printing with GNNs and CNNs · Sarah McMains Group",
+      link: "https://github.com/mihirtakalkar/additivemodels",
     },
     {
       title: "Software Engineering Intern",
