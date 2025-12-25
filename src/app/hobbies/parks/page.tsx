@@ -11,7 +11,9 @@ const parks = [
   { name: "Arches", lat: 38.7331, lon: -109.5925 },
   { name: "Bryce Canyon", lat: 37.5930, lon: -112.1871 },
   { name: "Grand Canyon", lat: 36.1069, lon: -112.1129 },
+  { name: "Everglades", lat: 25.5366, lon: -80.7487 },
   { name: "Lassen Volcanic", lat: 40.4977, lon: -121.4207 },
+  { name: "Crater Lake", lat: 42.9446, lon: -122.1090 },
   { name: "Haleakalā", lat: 20.7204, lon: -156.1552 },
   { name: "Hawaiʻi Volcanoes", lat: 19.4194, lon: -155.2885 },
 ];
