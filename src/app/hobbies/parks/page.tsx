@@ -7,10 +7,11 @@ const parks = [
   { name: "Mount Rainier", lat: 46.8523, lon: -121.7603 },
   { name: "Joshua Tree", lat: 33.8734, lon: -115.9010 },
   { name: "Olympic", lat: 47.8021, lon: -123.6044 },
-  { name: "North Cascades", lat: 48.7718, lon: -121.2985 },
+  { name: "North Cascades", lat: 48.5718, lon: -121.2985 },
   { name: "Arches", lat: 38.7331, lon: -109.5925 },
   { name: "Bryce Canyon", lat: 37.5930, lon: -112.1871 },
   { name: "Grand Canyon", lat: 36.1069, lon: -112.1129 },
+  { name: "Death Valley", lat: 36.5323, lon: -116.9325 },
   { name: "Everglades", lat: 25.5366, lon: -80.7487 },
   { name: "Lassen Volcanic", lat: 40.4977, lon: -121.4207 },
   { name: "Crater Lake", lat: 42.9446, lon: -122.1090 },
@@ -34,7 +35,7 @@ export default function Parks() {
         <div className="space-y-2">
           <h1 className="font-display text-3xl font-semibold">parks</h1>
           <p className="text-sm text-white/70">
-            A quick map of national parks I&apos;ve visited.
+            A map of national parks I&apos;ve visited.
           </p>
         </div>
 
