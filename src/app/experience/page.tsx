@@ -5,7 +5,7 @@ export default function Experience() {
       org: "Uber",
       location: "Sunnyvale, CA",
       duration: "Jan 2026 – Present",
-      description: "Membership",
+      description: "Membership: causal inference, engagement levers, and applied ML infrastructure",
     },
     {
       title: "Software Development Engineer Intern",

@@ -12,7 +12,7 @@ export default function Home() {
         </div>
 
         <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-          I study EECS at UC Berkeley, working across systems, applied ML, and embedded software. This winter I will intern at Uber; previously, I spent time at Amazon and have contributed to research on campus. Feel free to reach out!
+          I study EECS at UC Berkeley, working across systems, applied ML, and embedded software. I&apos;m currently at Uber on the Membership team, focused on causal inference and engagement modeling; previously, I spent time at Amazon and have contributed to research on campus. Feel free to reach out!
         </p>
 
         <div className="flex gap-4 text-sm text-white/80">
